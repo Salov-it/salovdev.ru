@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<title>Salov — Backend Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Premium Fonts -->
+<link rel="stylesheet" href="https://api.fontshare.com/css?f[]=sohne@1,2,3,4&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SALOV.DEV</div>
+
+    <nav class="nav-desktop">
+        <a href="#hero" data-scroll="#hero">Главная</a>
+        <a href="#projects" data-scroll="#projects">Проекты</a>
+        <a href="#experience" data-scroll="#experience">Опыт</a>
+        <a href="#about" data-scroll="#about">Обо мне</a>
+        <a href="#contact" data-scroll="#contact">Контакты</a>
+    </nav>
+
+    <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" data-scroll="#hero">Главная</a>
+    <a href="#projects" data-scroll="#projects">Проекты</a>
+    <a href="#experience" data-scroll="#experience">Опыт</a>
+    <a href="#about" data-scroll="#about">Обо мне</a>
+    <a href="#contact" data-scroll="#contact">Контакты</a>
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- HERO -->
+<section class="section" id="hero">
+    <h1>Привет, я Евгений<br><span>.NET Backend Engineer</span></h1>
+    <div class="hero-sub">
+        Создаю продакшн-готовые .NET-сервисы, Telegram-ботов и VPN-инфраструктуру.
+    </div>
+    <div class="hero-meta">4+ года коммерческого опыта · Пэймастер · EVO IT</div>
+    <a href="#projects" class="btn-primary">Мои проекты</a>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <div class="section-title">Проекты</div>
+
+    <div class="card">
+        <div class="card-title">ObhodHub / TunnelSecure</div>
+        <div class="card-desc">VPN-экосистема: бот, ноды, биллинг, авто-конфиги.</div>
+        <div class="tags">
+            <div class="tag">.NET</div><div class="tag">Docker</div>
+            <div class="tag">PostgreSQL</div><div class="tag">Xray-Reality</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">AdaptPro</div>
+        <div class="card-desc">Платформа онбординга: сценарии, роли, Telegram-уведомления.</div>
+        <div class="tags">
+            <div class="tag">.NET</div><div class="tag">RabbitMQ</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">FlowPhantom</div>
+        <div class="card-desc">R&D DPI-bypass — маскировка VPN под медиапотоки.</div>
+        <div class="tags">
+            <div class="tag">Networking</div><div class="tag">R&D</div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+    <div class="section-title">Опыт</div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <div class="card-title">Пэймастер</div>
+                <div class="card-subtitle">Ведущий backend-разработчик</div>
+            </div>
+            <div class="card-meta">2024 — наст. время</div>
+        </div>
+        <div class="card-desc">
+            Разработал Web API, реализовал длительное бронирование билетов,
+            настроил CI/CD Jenkins, повышал стабильность проекта.
+        </div>
+        <div class="tags">
+            <div class="tag">ASP.NET</div>
+            <div class="tag">MSSQL</div>
+            <div class="tag">Dapper</div>
+            <div class="tag">CI/CD</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <div class="card-title">EVO IT</div>
+                <div class="card-subtitle">Backend .NET Developer</div>
+            </div>
+            <div class="card-meta">2021 — 2024</div>
+        </div>
+        <div class="card-desc">
+            Переводил монолит в микросервисы,
+            писал REST API, интеграционные тесты,
+            поднимал Gitea и CI/CD.
+        </div>
+        <div class="tags">
+            <div class="tag">ASP.NET</div>
+            <div class="tag">PostgreSQL</div>
+            <div class="tag">RabbitMQ</div>
+            <div class="tag">CQRS</div>
+            <div class="tag">Mediatr</div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="section-title">Обо мне</div>
+    <p style="font-size: 18px; color: var(--sub); max-width: 640px;">
+        Я инженер, который делает рабочие продукты — от backend-сервисов
+        до VPN-инфраструктуры. Люблю чистый код, понятную архитектуру и
+        минималистичный дизайн.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="section-title">Контакты</div>
+    <div class="contact">
+        <a href="https://t.me/your_username" target="_blank">Telegram</a>
+        <a href="mailto:salovit96@gmail.com">Email</a>
+        <a href="https://github.com/Salov-it" target="_blank">GitHub</a>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
