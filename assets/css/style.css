@@ -26,7 +26,7 @@ header {
     top: 0;
     width: 100%;
     padding: 18px 40px;
-    background: rgba(255,255,255,0.65);
+    background: rgba(255,255,255,0.7);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
     display: flex;
@@ -38,7 +38,6 @@ header {
 .logo {
     font-weight: 600;
     font-size: 18px;
-    letter-spacing: -0.02em;
 }
 
 .nav-desktop a {
@@ -47,11 +46,10 @@ header {
     text-decoration: none;
     font-size: 16px;
     transition: .2s;
-    cursor: pointer;
 }
 
 .nav-desktop a:hover { color: var(--accent); }
-.nav-desktop a:active { transform: scale(0.93); }
+.nav-desktop a:active { transform: scale(0.95); }
 
 /* ================= BURGER ================= */
 .burger {
@@ -67,7 +65,6 @@ header {
     height: 3px;
     background: #111;
     border-radius: 4px;
-    display: block;
     transition: 0.3s;
 }
 
@@ -108,22 +105,16 @@ header {
 .mobile-menu a {
     font-size: 20px;
     color: #111;
-    text-decoration: none;
-    font-family: var(--font-alt);
     padding: 10px 6px;
     border-radius: 10px;
-    transition: 0.25s ease;
+    text-decoration: none;
+    transition: 0.25s;
 }
 
 .mobile-menu a:hover {
     background: rgba(37, 99, 235, 0.08);
     transform: translateX(4px);
     color: var(--accent);
-}
-
-.mobile-menu a:active {
-    transform: scale(0.95);
-    background: rgba(37, 99, 235, 0.15);
 }
 
 /* ================= BACKDROP ================= */
@@ -182,26 +173,36 @@ h1 span {
     color: var(--sub);
 }
 
-/* ================= BUTTON ================= */
-.btn-primary {
+/* ================= HERO BUTTONS ================= */
+.hero-buttons {
     margin-top: 32px;
-    display: inline-block;
+    display: flex;
+    gap: 14px;
+}
+
+.btn-primary {
     padding: 15px 34px;
     background: var(--accent);
     color: white;
     border-radius: 999px;
-    font-size: 18px;
     text-decoration: none;
+    font-size: 18px;
     box-shadow: 0 6px 22px rgba(37,99,235,0.25);
 }
 
-/* ================= SECTION TITLES ================= */
-.section-title {
-    margin-top: 40px;
-    font-size: 14px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--sub);
+.btn-outline {
+    padding: 15px 34px;
+    border-radius: 999px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-size: 18px;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
 /* ================= CARDS ================= */
@@ -214,7 +215,7 @@ h1 span {
     margin-bottom: 24px;
     opacity: 0;
     transform: translateY(18px);
-    transition: .7s ease;
+    transition: .7s;
 }
 
 .card.show {
@@ -233,7 +234,6 @@ h1 span {
 .card-meta { font-size: 13px; color: var(--sub); }
 .card-desc { font-size: 15px; color: var(--sub); margin-top: 12px; }
 
-/* ================= TAGS ================= */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -249,19 +249,266 @@ h1 span {
     font-size: 13px;
 }
 
-/* ================= CONTACT ================= */
-.contact a {
-    text-decoration: none;
-    color: var(--accent);
-    font-size: 20px;
-    margin-right: 22px;
+/* ================= SERVICES ================= */
+.services-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 18px;
+    max-width: 680px;
 }
 
-/* ================= MOBILE ================= */
+.services-text {
+    font-size: 18px;
+    color: var(--sub);
+    max-width: 720px;
+    margin-bottom: 32px;
+}
+
+.services-btn { margin-top: 24px; }
+
+/* ================= ABOUT SECTION ================= */
+
+.about-card {
+    margin-top: 40px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: var(--shadow);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-photo-card {
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-info h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.about-info p {
+    font-size: 17px;
+    color: var(--sub);
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+/* кнопка */
+.about-info .btn-primary {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+/* ============= ADAPTIVE ============= */
+
+@media (max-width: 800px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-photo-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-info h2 {
+        font-size: 24px;
+    }
+
+    .about-info p {
+        font-size: 15px;
+    }
+}
+
+/* ================= CONTACT CARD ================= */
+.contact-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-text {
+    max-width: 580px;
+    margin: 14px auto 30px;
+    color: var(--sub);
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+/* CONTACT LINKS */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #f8f9ff;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 17px;
+    transition: 0.25s ease;
+}
+
+.contact-item:hover {
+    background: #e6ecff;
+    transform: translateY(-3px);
+}
+
+.contact-item svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--accent);
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
-    h1 { font-size: 34px; line-height: 1.25; }
-    .hero-sub { font-size: 16px; }
-    .card { padding: 20px; }
-    .card-title { font-size: 18px; }
-    .contact a { display: block; margin: 10px 0; }
+    .contact-card { padding: 26px; }
+    .contact-title { font-size: 22px; }
+    .contact-item { width: 100%; justify-content: center; }
+}
+
+/* ================= ANIMATED CONTACT BUTTON ================= */
+
+.animated-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 34px;
+    border-radius: 999px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: var(--accent);
+    box-shadow: 0 6px 22px rgba(37,99,235,0.25);
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+    z-index: 1;
+}
+
+/* мягкий градиент-перелив */
+.animated-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, #3b82f6, #60a5fa);
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: -1;
+}
+
+.animated-btn:hover::before {
+    opacity: 1;
+}
+
+/* Hover эффект */
+.animated-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.35);
+}
+
+/* Active эффект */
+.animated-btn:active {
+    transform: scale(0.95);
+}
+
+/* Белый блик */
+.animated-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -35%;
+    width: 40%;
+    height: 200%;
+    background: rgba(255,255,255,0.35);
+    transform: translateY(-50%) rotate(25deg);
+    transition: left .55s ease;
+    pointer-events: none;
+}
+
+.animated-btn:hover::after {
+    left: 130%;
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #14171A; /* мягкий тёмный графит, не черный */
+    padding: 32px 20px;
+    margin-top: 100px;
+    color: #e5e7eb; /* светлый текст */
+}
+
+.footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+}
+
+.footer-sub {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #b5b9c0;
+}
+
+.footer-copy {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #8a8d92;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .footer {
+        padding: 28px 16px;
+    }
+    .footer-logo {
+        font-size: 17px;
+    }
+    .footer-sub {
+        font-size: 13px;
+    }
 }

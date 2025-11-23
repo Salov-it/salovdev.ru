@@ -17,10 +17,11 @@
 <body>
 
 <header>
-    <div class="logo">SALOV.DEV</div>
+    <div class="logo">salovdev.ru</div>
 
     <nav class="nav-desktop">
         <a href="#hero" data-scroll="#hero">Главная</a>
+        <a href="#services" data-scroll="#services">Заказать разработку</a>
         <a href="#projects" data-scroll="#projects">Проекты</a>
         <a href="#experience" data-scroll="#experience">Опыт</a>
         <a href="#about" data-scroll="#about">Обо мне</a>
@@ -35,6 +36,7 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <a href="#hero" data-scroll="#hero">Главная</a>
+    <a href="#services" data-scroll="#services">Заказать разработку</a>
     <a href="#projects" data-scroll="#projects">Проекты</a>
     <a href="#experience" data-scroll="#experience">Опыт</a>
     <a href="#about" data-scroll="#about">Обо мне</a>
@@ -47,10 +49,15 @@
 <section class="section" id="hero">
     <h1>Привет, я Евгений<br><span>.NET Backend Engineer</span></h1>
     <div class="hero-sub">
-        Создаю продакшн-готовые .NET-сервисы, Telegram-ботов и VPN-инфраструктуру.
+        Создаю продакшн-готовые .NET-сервисы, Telegram-ботов и проекты под ключ.
     </div>
     <div class="hero-meta">4+ года коммерческого опыта · Пэймастер · EVO IT</div>
-    <a href="#projects" class="btn-primary">Мои проекты</a>
+   <div class="hero-buttons">
+    <a href="#projects" class="animated-btn">Мои проекты</a>
+    <a href="https://t.me/salov_ev" target="_blank" class="btn-outline">
+        Заказать разработку
+    </a>
+</div>
 </section>
 
 <!-- PROJECTS -->
@@ -59,29 +66,78 @@
 
     <div class="card">
         <div class="card-title">ObhodHub / TunnelSecure</div>
-        <div class="card-desc">VPN-экосистема: бот, ноды, биллинг, авто-конфиги.</div>
-        <div class="tags">
-            <div class="tag">.NET</div><div class="tag">Docker</div>
-            <div class="tag">PostgreSQL</div><div class="tag">Xray-Reality</div>
+        <div class="card-desc">
+            Полноценная VPN-платформа с Telegram-ботом, автоматической выдачей конфигов,
+            биллингом, подключением нод и интеграцией RemnaWave.
+            Система полностью автоматизирует продажу подписок и управление подключениями.
         </div>
-    </div>
-
-    <div class="card">
-        <div class="card-title">AdaptPro</div>
-        <div class="card-desc">Платформа онбординга: сценарии, роли, Telegram-уведомления.</div>
-        <div class="tags">
-            <div class="tag">.NET</div><div class="tag">RabbitMQ</div>
+        <div class="card-desc" style="margin-top: 10px;">
+            <b>Функциональность:</b><br>
+            • Авто-создание VPN-профилей через Remna API<br>
+            • Продление подписки, биллинг, оплатa Platega<br>
+            • Управление нодами и конфигами Xray-Reality<br>
+            • Проверка статуса подписки и трафика<br>
+            • Реферальная система<br>
+            • Тех.уведомления через очередь уведомлений<br>
+            • Фоновая проверка платежей и синхронизация<br>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="card-title">FlowPhantom</div>
-        <div class="card-desc">R&D DPI-bypass — маскировка VPN под медиапотоки.</div>
         <div class="tags">
-            <div class="tag">Networking</div><div class="tag">R&D</div>
+            <div class="tag">.NET</div>
+            <div class="tag">Docker</div>
+            <div class="tag">PostgreSQL</div>
+            <div class="tag">Xray-Reality</div>
+            <div class="tag">CQRS</div>
+            <div class="tag">Background Services</div>
         </div>
     </div>
 </section>
+
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+    <div class="section-title">Заказать разработку</div>
+
+    <h2 class="services-title">
+        Полный цикл разработки под ключ
+    </h2>
+
+    <p class="services-text">
+        Я создаю не только Telegram-ботов — я разрабатываю полноценные программные продукты.
+        От backend-архитектуры и серверной логики до небольших фронтенд-интерфейсов,
+        инфраструктуры, интеграций и продакшн-деплоя.  
+        Вы получаете полностью рабочий проект, готовый к росту и нагрузке.
+    </p>
+
+    <div class="card">
+        <div class="card-title">Что могу разработать</div>
+        <div class="card-desc">
+            • Web API на .NET / C#<br>
+            • Бизнес-логика, биллинг, платежи<br>
+            • Любые Telegram-боты (меню, экосистемы, CRM-боты)<br>
+            • Сложные системы: VPN-платформы, конфиг-генераторы, очереди<br>
+            • Микросервисы, интеграции, очереди, кэширование<br>
+            • Легкие фронтенд-части: лендинги, панели, UI для сервисов<br>
+            • DevOps (Docker, CI/CD, деплой, настройка серверов)<br>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Почему это удобно</div>
+        <div class="card-desc">
+            ✓ Я делаю весь проект сам — от идеи до продакшена<br>
+            ✓ Не нужно искать backend, бэкендера, DevOps и фронтендера по отдельности<br>
+            ✓ Глубокая экспертиза в архитектуре и реальных продакшн-системах<br>
+            ✓ Даю понятный план работ и прозрачные сроки<br>
+            ✓ Всегда на связи, без пропаж и задержек<br>
+            ✓ Проекты работают стабильно и при больших нагрузках<br>
+        </div>
+    </div>
+
+    <a href="https://t.me/salov_ev" target="_blank" class="animated-btn services-btn">
+        Обсудить проект
+    </a>
+</section>
+
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
@@ -93,10 +149,10 @@
                 <div class="card-title">Пэймастер</div>
                 <div class="card-subtitle">Ведущий backend-разработчик</div>
             </div>
-            <div class="card-meta">2024 — наст. время</div>
+            <div class="card-meta">2024 — 2025</div>
         </div>
         <div class="card-desc">
-            Разработал Web API, реализовал длительное бронирование билетов,
+            Разработал Web API,
             настроил CI/CD Jenkins, повышал стабильность проекта.
         </div>
         <div class="tags">
@@ -133,25 +189,91 @@
 <!-- ABOUT -->
 <section class="section" id="about">
     <div class="section-title">Обо мне</div>
-    <p style="font-size: 18px; color: var(--sub); max-width: 640px;">
-        Я инженер, который делает рабочие продукты — от backend-сервисов
-        до VPN-инфраструктуры. Люблю чистый код, понятную архитектуру и
-        минималистичный дизайн.
-    </p>
+
+    <div class="about-card">
+        <img src="assets/img/me.jpg" alt="Евгений Салов" class="about-photo-card">
+
+        <div class="about-info">
+            <h2>Евгений Салов — Backend Engineer</h2>
+
+            <p>
+                Разрабатываю полноценные решения на .NET: backend-сервисы,
+                микросервисы, REST API, Telegram-ботов, биллинг-системы и VPN-инфраструктуру.
+            </p>
+
+            <p>
+                Создаю продукты <b>под ключ</b> — от архитектуры и backend-логики
+                до деплоя, Docker-инфраструктуры, CI/CD и мониторинга.
+            </p>
+
+            <p>
+                Автор VPN-платформы <b>ObhodHub / TunnelSecure</b> —
+                комплексной системы с автоматическим биллингом, нодами и конфиг-генерацией.
+            </p>
+
+            <a href="https://t.me/salov_ev" target="_blank" class="animated-btn">
+                Связаться со мной
+            </a>
+        </div>
+    </div>
 </section>
+
+
+
 
 <!-- CONTACT -->
 <section class="section" id="contact">
     <div class="section-title">Контакты</div>
-    <div class="contact">
-        <a href="https://t.me/your_username" target="_blank">Telegram</a>
-        <a href="mailto:salovit96@gmail.com">Email</a>
-        <a href="https://github.com/Salov-it" target="_blank">GitHub</a>
+
+    <div class="contact-card">
+        <h2 class="contact-title">Связаться со мной</h2>
+        <p class="contact-text">
+            Открыт для разработки под ключ, сложных backend-проектов, VPN-систем,
+            Telegram-ботов и микросервисов.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="https://t.me/salov_ev" target="_blank" class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M9.993 15.055l-.396 5.58c.568 0 .812-.244 1.107-.538l2.663-2.55 5.517 4.037c1.011.558 1.73.264 1.997-.935l3.62-16.93.001-.001c.321-1.497-.542-2.081-1.532-1.72L1.322 9.68c-1.45.566-1.43 1.38-.261 1.748l5.642 1.76 13.07-8.24c.615-.37 1.176-.17.714.2"/></svg>
+                Telegram
+            </a>
+
+            <a href="mailto:salovit96@gmail.com" class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Email
+            </a>
+
+            <a href="https://github.com/Salov-it" target="_blank" class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.086 3.292 9.387 7.867 10.907.575.107.783-.25.783-.555v-1.957c-3.2.697-3.875-1.37-3.875-1.37-.524-1.33-1.278-1.685-1.278-1.685-1.043-.713.08-.699.08-.699 1.153.078 1.76 1.183 1.76 1.183 1.027 1.76 2.69 1.252 3.345.957.104-.744.402-1.252.732-1.54-2.556-.292-5.245-1.278-5.245-5.69 0-1.257.448-2.285 1.183-3.09-.118-.29-.513-1.463.113-3.05 0 0 .965-.31 3.162 1.18a11.09 11.09 0 0 1 2.875-.385c.975.005 1.953.13 2.875.385 2.197-1.49 3.162-1.18 3.162-1.18.626 1.587.231 2.76.113 3.05.735.805 1.183 1.833 1.183 3.09 0 4.423-2.694 5.395-5.26 5.682.413.36.78 1.078.78 2.187v3.247c0 .308.208.667.79.553C20.213 21.383 23.5 17.08 23.5 12c0-6.352-5.148-11.5-11.5-11.5z"/></svg>
+                GitHub
+            </a>
+
+        </div>
+
+       <a href="https://t.me/salov_ev" target="_blank" class="contact-btn animated-btn">
+    Написать мне
+</a>
+
+
     </div>
 </section>
+
 
 <!-- JS -->
 <script src="assets/js/script.js"></script>
 
 </body>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">salovdev.ru</div>
+        <div class="footer-sub">Разработка под ключ · Backend · Telegram · VPN</div>
+        <div class="footer-copy">© 2025 · Евгений Салов</div>
+    </div>
+</footer>
+
+
+
 </html>
