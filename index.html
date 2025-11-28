@@ -2,16 +2,19 @@
 <html lang="ru">
 
 <head>
-<meta charset="UTF-8">
-<title>Salov — Backend Engineer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Salov — .NET Backend Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Premium Fonts -->
-<link rel="stylesheet" href="https://api.fontshare.com/css?f[]=sohne@1,2,3,4&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta name="description" content=".NET Backend Engineer. Разработка продакшн-готовых backend-систем, Telegram-платформ, VPN-продуктов, микросервисов и архитектуры под ключ.">
 
-<!-- CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Premium Fonts -->
+    <link rel="stylesheet" href="https://api.fontshare.com/css?f[]=sohne@1,2,3,4&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,7 +24,7 @@
 
     <nav class="nav-desktop">
         <a href="#hero" data-scroll="#hero">Главная</a>
-        <a href="#services" data-scroll="#services">Заказать разработку</a>
+        <a href="#services" data-scroll="#services">Услуги</a>
         <a href="#projects" data-scroll="#projects">Проекты</a>
         <a href="#experience" data-scroll="#experience">Опыт</a>
         <a href="#about" data-scroll="#about">Обо мне</a>
@@ -36,7 +39,7 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
     <a href="#hero" data-scroll="#hero">Главная</a>
-    <a href="#services" data-scroll="#services">Заказать разработку</a>
+    <a href="#services" data-scroll="#services">Услуги</a>
     <a href="#projects" data-scroll="#projects">Проекты</a>
     <a href="#experience" data-scroll="#experience">Опыт</a>
     <a href="#about" data-scroll="#about">Обо мне</a>
@@ -48,16 +51,20 @@
 <!-- HERO -->
 <section class="section" id="hero">
     <h1>Привет, я Евгений<br><span>.NET Backend Engineer</span></h1>
+
     <div class="hero-sub">
-        Создаю продакшн-готовые .NET-сервисы, Telegram-ботов и проекты под ключ.
+        Проектирую и разрабатываю продакшн-готовые backend-системы на .NET:
+        Web API, микросервисы, очереди, интеграции и Telegram-платформы с серьёзной логикой.
     </div>
-    <div class="hero-meta">4+ года коммерческого опыта · Пэймастер · EVO IT</div>
-   <div class="hero-buttons">
-    <a href="#projects" class="animated-btn">Мои проекты</a>
-    <a href="https://t.me/salov_ev" target="_blank" class="btn-outline">
-        Заказать разработку
-    </a>
-</div>
+
+    <div class="hero-meta">
+        4+ лет коммерческого опыта · .NET 8 / ASP.NET Core / PostgreSQL / RabbitMQ · Архитектура и backend-сервисы
+    </div>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="animated-btn">Смотреть проекты</a>
+        <a href="https://t.me/salov_ev" target="_blank" class="btn-outline">Обсудить задачу</a>
+    </div>
 </section>
 
 <!-- PROJECTS -->
@@ -65,26 +72,29 @@
     <div class="section-title">Проекты</div>
 
     <div class="card">
-        <div class="card-title">ObhodHub / TunnelSecure</div>
+        <div class="card-title">ObhodHub / TunnelSecure — VPN-платформа</div>
         <div class="card-desc">
-            Полноценная VPN-платформа с Telegram-ботом, автоматической выдачей конфигов,
-            биллингом, подключением нод и интеграцией RemnaWave.
-            Система полностью автоматизирует продажу подписок и управление подключениями.
+            Собственная VPN-платформа с Telegram-ботом и полностью автоматизированным backend-ядром.
+            Система управляет подписками, конфигами и нодами без ручного администрирования.
         </div>
+
         <div class="card-desc" style="margin-top: 10px;">
             <b>Функциональность:</b><br>
-            • Авто-создание VPN-профилей через Remna API<br>
-            • Продление подписки, биллинг, оплатa Platega<br>
+            • Создание VPN-профилей через RemnaWave API<br>
+            • Управление подписками: активация, продление, истечение<br>
+            • Платёжный модуль с Platega (webhook-и, статусы, защита от дублей)<br>
             • Управление нодами и конфигами Xray-Reality<br>
-            • Проверка статуса подписки и трафика<br>
+            • Проверка статуса подписки, остатка трафика и подключения<br>
             • Реферальная система<br>
-            • Тех.уведомления через очередь уведомлений<br>
-            • Фоновая проверка платежей и синхронизация<br>
+            • Очередь уведомлений и тех.оповещений<br>
+            • Фоновая синхронизация данных и проверка статусов<br>
         </div>
+
         <div class="tags">
-            <div class="tag">.NET</div>
-            <div class="tag">Docker</div>
+            <div class="tag">.NET 8</div>
+            <div class="tag">ASP.NET Core</div>
             <div class="tag">PostgreSQL</div>
+            <div class="tag">Docker</div>
             <div class="tag">Xray-Reality</div>
             <div class="tag">CQRS</div>
             <div class="tag">Background Services</div>
@@ -92,44 +102,42 @@
     </div>
 </section>
 
-
 <!-- SERVICES -->
 <section class="section services" id="services">
-    <div class="section-title">Заказать разработку</div>
+    <div class="section-title">Услуги</div>
 
     <h2 class="services-title">
-        Полный цикл разработки под ключ
+        Разработка backend-систем и Telegram-платформ
     </h2>
 
     <p class="services-text">
-        Я создаю не только Telegram-ботов — я разрабатываю полноценные программные продукты.
-        От backend-архитектуры и серверной логики до небольших фронтенд-интерфейсов,
-        инфраструктуры, интеграций и продакшн-деплоя.  
-        Вы получаете полностью рабочий проект, готовый к росту и нагрузке.
+        Специализируюсь на создании устойчивых и масштабируемых серверных систем.
+        Проектирую архитектуру, интеграции, очереди, кэширование и инфраструктуру.
+        Работаю там, где нужна сложная логика, продуманная структура и стабильность под нагрузкой.
     </p>
 
     <div class="card">
-        <div class="card-title">Что могу разработать</div>
+        <div class="card-title">Что я разрабатываю</div>
         <div class="card-desc">
-            • Web API на .NET / C#<br>
-            • Бизнес-логика, биллинг, платежи<br>
-            • Любые Telegram-боты (меню, экосистемы, CRM-боты)<br>
-            • Сложные системы: VPN-платформы, конфиг-генераторы, очереди<br>
-            • Микросервисы, интеграции, очереди, кэширование<br>
-            • Легкие фронтенд-части: лендинги, панели, UI для сервисов<br>
-            • DevOps (Docker, CI/CD, деплой, настройка серверов)<br>
+            • Web API и сервисы на .NET / C#<br>
+            • Telegram-ботов как фронтенд к backend-системам<br>
+            • Платформы с подписками, биллингом, ролями и интеграциями<br>
+            • VPN-системы, конфиг-генераторы, управление нодами<br>
+            • Микросервисы, очереди, фоновые процессы<br>
+            • Кэширование, распределённые процессы, отказоустойчивость<br>
+            • Docker-окружение, деплой, настройку серверов<br>
         </div>
     </div>
 
     <div class="card">
-        <div class="card-title">Почему это удобно</div>
+        <div class="card-title">Как я работаю</div>
         <div class="card-desc">
-            ✓ Я делаю весь проект сам — от идеи до продакшена<br>
-            ✓ Не нужно искать backend, бэкендера, DevOps и фронтендера по отдельности<br>
-            ✓ Глубокая экспертиза в архитектуре и реальных продакшн-системах<br>
-            ✓ Даю понятный план работ и прозрачные сроки<br>
-            ✓ Всегда на связи, без пропаж и задержек<br>
-            ✓ Проекты работают стабильно и при больших нагрузках<br>
+            ✓ Архитектура с расчётом на развитие и поддержку<br>
+            ✓ Аккуратный, модульный код (.NET 8, CQRS, DDD, SOLID)<br>
+            ✓ Техника разработки как в реальных продакшн-системах<br>
+            ✓ Прозрачные этапы: анализ → проектирование → реализация → запуск<br>
+            ✓ Обоснованные решения по базе, кэшу, очередям, API<br>
+            ✓ Плотная связь и понимание бизнес-задач<br>
         </div>
     </div>
 
@@ -137,7 +145,6 @@
         Обсудить проект
     </a>
 </section>
-
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
@@ -147,14 +154,17 @@
         <div class="card-header">
             <div>
                 <div class="card-title">Пэймастер</div>
-                <div class="card-subtitle">Ведущий backend-разработчик</div>
+                <div class="card-subtitle">Backend-разработчик (.NET)</div>
             </div>
             <div class="card-meta">2024 — 2025</div>
         </div>
+
         <div class="card-desc">
-            Разработал Web API,
-            настроил CI/CD Jenkins, повышал стабильность проекта.
+            Разработка и поддержка backend-сервисов на .NET.
+            Проектировал Web API, улучшал архитектуру, оптимизировал производительность.
+            Настраивал CI/CD на Jenkins и участвовал в развитии инфраструктуры.
         </div>
+
         <div class="tags">
             <div class="tag">ASP.NET</div>
             <div class="tag">MSSQL</div>
@@ -171,17 +181,19 @@
             </div>
             <div class="card-meta">2021 — 2024</div>
         </div>
+
         <div class="card-desc">
-            Переводил монолит в микросервисы,
-            писал REST API, интеграционные тесты,
-            поднимал Gitea и CI/CD.
+            Занимался развитием системы: перевод монолита на микросервисы,
+            создание REST API, интеграций, очередей и сервисов.
+            Поднимал Gitea, строил CI/CD, писал интеграционные тесты.
         </div>
+
         <div class="tags">
             <div class="tag">ASP.NET</div>
             <div class="tag">PostgreSQL</div>
             <div class="tag">RabbitMQ</div>
             <div class="tag">CQRS</div>
-            <div class="tag">Mediatr</div>
+            <div class="tag">MediatR</div>
         </div>
     </div>
 </section>
@@ -194,21 +206,23 @@
         <img src="assets/img/me.jpg" alt="Евгений Салов" class="about-photo-card">
 
         <div class="about-info">
-            <h2>Евгений Салов — Backend Engineer</h2>
+            <h2>Евгений Салов — .NET Backend Engineer</h2>
 
             <p>
-                Разрабатываю полноценные решения на .NET: backend-сервисы,
-                микросервисы, REST API, Telegram-ботов, биллинг-системы и VPN-инфраструктуру.
+                Занимаюсь архитектурой и backend-разработкой.
+                Проектирую сервисы, которые выдерживают рост нагрузки,
+                интеграции, подписки, очереди, сложные процессы и реальные пользователи.
             </p>
 
             <p>
-                Создаю продукты <b>под ключ</b> — от архитектуры и backend-логики
-                до деплоя, Docker-инфраструктуры, CI/CD и мониторинга.
+                Умею строить полноценные платформы — от API и доменной логики
+                до Docker-инфраструктуры, очередей, мониторинга и деплоя.
             </p>
 
             <p>
                 Автор VPN-платформы <b>ObhodHub / TunnelSecure</b> —
-                комплексной системы с автоматическим биллингом, нодами и конфиг-генерацией.
+                системы с автоматическим управлением нодами,
+                подписками, уведомлениями и Telegram-интерфейсом.
             </p>
 
             <a href="https://t.me/salov_ev" target="_blank" class="animated-btn">
@@ -218,24 +232,22 @@
     </div>
 </section>
 
-
-
-
 <!-- CONTACT -->
 <section class="section" id="contact">
     <div class="section-title">Контакты</div>
 
     <div class="contact-card">
         <h2 class="contact-title">Связаться со мной</h2>
+
         <p class="contact-text">
-            Открыт для разработки под ключ, сложных backend-проектов, VPN-систем,
-            Telegram-ботов и микросервисов.
+            Открыт к предложениям по backend-разработке, архитектуре,
+            интеграциям, VPN-платформам и Telegram-системам.
         </p>
 
         <div class="contact-links">
 
             <a href="https://t.me/salov_ev" target="_blank" class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M9.993 15.055l-.396 5.58c.568 0 .812-.244 1.107-.538l2.663-2.55 5.517 4.037c1.011.558 1.73.264 1.997-.935l3.62-16.93.001-.001c.321-1.497-.542-2.081-1.532-1.72L1.322 9.68c-1.45.566-1.43 1.38-.261 1.748l5.642 1.76 13.07-8.24c.615-.37 1.176-.17.714.2"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M9.993 15.055l-.396 5.58c.568 0 .812-.244 1.107-.538l2.663-2.55 5.517 4.037c1.011.558 1.73.264 1.997-.935l3.62-16.93c.321-1.497-.542-2.081-1.532-1.72L1.322 9.68c-1.45.566-1.43 1.38-.261 1.748l5.642 1.76 13.07-8.24c.615-.37 1.176-.17.714.2"/></svg>
                 Telegram
             </a>
 
@@ -251,14 +263,11 @@
 
         </div>
 
-       <a href="https://t.me/salov_ev" target="_blank" class="contact-btn animated-btn">
-    Написать мне
-</a>
-
-
+        <a href="https://t.me/salov_ev" target="_blank" class="contact-btn animated-btn">
+            Написать мне
+        </a>
     </div>
 </section>
-
 
 <!-- JS -->
 <script src="assets/js/script.js"></script>
@@ -269,11 +278,9 @@
 <footer class="footer">
     <div class="footer-inner">
         <div class="footer-logo">salovdev.ru</div>
-        <div class="footer-sub">Разработка под ключ · Backend · Telegram · VPN</div>
+        <div class="footer-sub">Backend · .NET · Архитектура · Telegram · VPN</div>
         <div class="footer-copy">© 2025 · Евгений Салов</div>
     </div>
 </footer>
-
-
 
 </html>
