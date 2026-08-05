@@ -16,10 +16,20 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-main);
+
     overflow-x: hidden;
+
     line-height: 1.55;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
 /* ================= HEADER ================= */
 header {
     position: fixed;
@@ -469,10 +479,12 @@ h1 span {
 
 /* ================= FOOTER ================= */
 .footer {
-    background: #14171A; /* мягкий тёмный графит, не черный */
+    background: #14171A;
     padding: 32px 20px;
-    margin-top: 100px;
-    color: #e5e7eb; /* светлый текст */
+
+    margin-top: auto;
+
+    color: #e5e7eb;
 }
 
 .footer-inner {
