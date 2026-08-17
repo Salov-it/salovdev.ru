@@ -43,3 +43,21 @@
     opacity: 0.55;
     white-space: nowrap;
 }
+
+.brand-name .brand-dev {
+    color: #2563eb;
+}
+
+.brand-bracket {
+    color: #22c55e;
+}
+
+.brand-dev {
+    color: #2563eb;
+}
+
+@media (max-width: 600px) {
+    .brand-tagline {
+        display: none;
+    }
+}
