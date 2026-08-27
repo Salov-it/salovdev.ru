@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Мои проекты — Евгений Салов</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="Собственные проекты Евгения Салова — Senior C#/.NET Backend Developer. Ёрш VPN и другие backend-продукты.">
+
+    <!-- Fonts -->
+    <link rel="stylesheet"
+          href="https://api.fontshare.com/css?f[]=sohne@1,2,3,4&display=swap">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Existing site styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/logo.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="/" class="brand">
+
+        <img src="assets/img/logo.jpg"
+             alt="Salov.dev"
+             class="brand-logo">
+
+        <div class="brand-info">
+
+            <span class="brand-name">
+                <span class="brand-bracket">{</span>
+                Salov.<span class="brand-dev">dev</span>
+                <span class="brand-bracket">}</span>
+            </span>
+
+            <span class="brand-tagline">
+                Документируй сегодня то, что забудешь завтра
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <nav class="nav-desktop">
+
+        <a href="/">Главная</a>
+
+        <a href="/#projects">
+            Кейсы
+        </a>
+
+        <a href="/projects.html">
+            Мои проекты
+        </a>
+
+        <a href="/#services">
+            Услуги
+        </a>
+
+        <a href="/#experience">
+            Опыт
+        </a>
+
+        <a href="/#about">
+            Обо мне
+        </a>
+
+        <a href="/#contact">
+            Контакты
+        </a>
+
+    </nav>
+
+
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="/">
+        Главная
+    </a>
+
+    <a href="/#projects">
+        Кейсы
+    </a>
+
+    <a href="/projects.html">
+        Мои проекты
+    </a>
+
+    <a href="/#services">
+        Услуги
+    </a>
+
+    <a href="/#experience">
+        Опыт
+    </a>
+
+    <a href="/#about">
+        Обо мне
+    </a>
+
+    <a href="/#contact">
+        Контакты
+    </a>
+
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+
+
+<!-- HERO -->
+
+<section class="section">
+
+    <h1>
+        Мои
+        <span>проекты</span>
+    </h1>
+
+    <div class="hero-sub">
+
+        Здесь собраны продукты и сервисы,
+        которые я самостоятельно проектирую,
+        разрабатываю и запускаю.
+
+    </div>
+
+    <div class="hero-meta">
+
+        Архитектура · Backend · Infrastructure · Production
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="section">
+
+    <div class="section-title">
+        Собственные продукты
+    </div>
+
+
+    <!-- YORSH VPN -->
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <div>
+
+                <div class="card-title">
+                    Ёрш VPN
+                </div>
+
+                <div class="card-subtitle">
+                    VPN-сервис
+                </div>
+
+            </div>
+
+            <div class="card-meta">
+                2026 — настоящее время
+            </div>
+
+        </div>
+
+
+        <div class="card-desc">
+
+            Собственный VPN-сервис,
+            который я самостоятельно спроектировал,
+            разработал и запустил.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            Проект включает backend-платформу,
+            Telegram-бота, веб-интерфейс,
+            систему управления подписками,
+            платежную инфраструктуру
+            и управление VPN-серверами.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 20px;">
+
+            <b>Основная функциональность:</b>
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            • регистрация и управление пользователями;<br>
+
+            • создание VPN-профилей через RemnaWave API;<br>
+
+            • управление VPN-подписками;<br>
+
+            • управление сроками действия подписок;<br>
+
+            • отображение использованного трафика;<br>
+
+            • Telegram-бот для взаимодействия с сервисом;<br>
+
+            • веб-личный кабинет пользователя;<br>
+
+            • интеграция платежной системы;<br>
+
+            • webhook-обработка платежей;<br>
+
+            • защита от повторной обработки платежей;<br>
+
+            • система уведомлений;<br>
+
+            • фоновые процессы и синхронизация данных;<br>
+
+            • управление VPN-нодами;<br>
+
+            • конфигурация Xray / VLESS;<br>
+
+            • Docker-инфраструктура;<br>
+
+            • reverse proxy через Nginx;<br>
+
+            • HTTPS и SSL-сертификаты.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 20px;">
+
+            <b>Архитектура:</b>
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            Backend проекта написан на C# / .NET 8.
+
+            Основная бизнес-логика,
+            работа с пользователями,
+            подписками, платежами
+            и VPN-профилями реализована
+            в собственном backend-приложении.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            Для управления VPN-инфраструктурой
+            используется RemnaWave API.
+
+            Сервисы развёрнуты в Docker
+            на нескольких VPS-серверах.
+
+        </div>
+
+
+        <!-- STACK -->
+
+        <div class="tags">
+
+            <div class="tag">
+                C#
+            </div>
+
+            <div class="tag">
+                .NET 8
+            </div>
+
+            <div class="tag">
+                ASP.NET Core
+            </div>
+
+            <div class="tag">
+                PostgreSQL
+            </div>
+
+            <div class="tag">
+                EF Core
+            </div>
+
+            <div class="tag">
+                Docker
+            </div>
+
+            <div class="tag">
+                Telegram Bot
+            </div>
+
+            <div class="tag">
+                RemnaWave API
+            </div>
+
+            <div class="tag">
+                Xray
+            </div>
+
+            <div class="tag">
+                VLESS
+            </div>
+
+            <div class="tag">
+                Nginx
+            </div>
+
+            <div class="tag">
+                Background Services
+            </div>
+
+        </div>
+
+
+        <!-- LINKS -->
+
+        <div style="
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        ">
+
+            <a href="https://yorshvpn.ru"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="animated-btn">
+
+                Открыть сайт
+
+            </a>
+
+
+            <a href="https://t.me/yorshvpn_bot"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-outline">
+
+                Telegram-бот
+
+            </a>
+
+
+            <a href="https://t.me/yorshvpnSupport"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-outline">
+
+                Поддержка
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DEVELOPMENT -->
+
+<section class="section">
+
+    <div class="section-title">
+        Разработка
+    </div>
+
+
+    <div class="card">
+
+        <div class="card-title">
+            От идеи до production
+        </div>
+
+
+        <div class="card-desc">
+
+            В собственных проектах занимаюсь
+            не только разработкой backend.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            Самостоятельно прорабатываю архитектуру,
+            проектирую базу данных,
+            реализую интеграции,
+            разворачиваю инфраструктуру,
+            настраиваю серверы
+            и поддерживаю продукт после запуска.
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 20px;">
+
+            <b>В рамках Ёрш VPN:</b>
+
+        </div>
+
+
+        <div class="card-desc"
+             style="margin-top: 10px;">
+
+            • проектирование архитектуры;<br>
+
+            • backend-разработка;<br>
+
+            • проектирование базы данных;<br>
+
+            • интеграции с внешними API;<br>
+
+            • Telegram Bot API;<br>
+
+            • frontend / web-интерфейс;<br>
+
+            • Docker;<br>
+
+            • Linux-серверы;<br>
+
+            • reverse proxy;<br>
+
+            • домены и SSL;<br>
+
+            • VPN-ноды;<br>
+
+            • deployment;<br>
+
+            • мониторинг и исправление production-проблем.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OTHER PROJECTS -->
+
+<section class="section">
+
+    <div class="section-title">
+        Другие проекты
+    </div>
+
+
+    <div class="card">
+
+        <div class="card-title">
+            Новые продукты
+        </div>
+
+
+        <div class="card-desc">
+
+            Раздел будет пополняться другими
+            сервисами и продуктами,
+            которые я разрабатываю.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section">
+
+    <div class="section-title">
+        Контакты
+    </div>
+
+
+    <div class="contact-card">
+
+        <h2 class="contact-title">
+            Есть идея проекта?
+        </h2>
+
+
+        <p class="contact-text">
+
+            Могу помочь спроектировать
+            и разработать backend-систему,
+            интеграционный сервис,
+            API или полноценный продукт.
+
+        </p>
+
+
+        <a href="https://t.me/salov_ev"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-btn animated-btn">
+
+            Написать мне
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-logo">
+            salov.dev
+        </div>
+
+
+        <div class="footer-sub">
+
+            Senior C#/.NET Backend Developer ·
+            API · PostgreSQL · Integrations
+
+        </div>
+
+
+        <div class="footer-copy">
+            © 2026 · Евгений Салов
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
